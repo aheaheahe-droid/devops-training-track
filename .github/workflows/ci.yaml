@@ -55,6 +55,9 @@ jobs:
           path: ./my-python-app.tar
 
       # Build Binary (optional if you want to generate a binary instead of a Docker image)
+      - name: Install PyInstaller
+        run: |
+          pip install pyinstaller
       - name: Build Binary (optional)
         run: |
           pyinstaller --onefile hello.py
