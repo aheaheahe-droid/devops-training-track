@@ -43,7 +43,7 @@ jobs:
 
       # Store Docker image as an artifact (optional)
       - name: Save Docker image as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: my-python-app-image
           path: ./my-python-app.tar
